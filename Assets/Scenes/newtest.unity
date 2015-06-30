@@ -546,18 +546,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 1
-  _canInteractWith: 1
-  _normalInteraction: OnOpen
-  _interactGUIText: {fileID: 0}
-  _interactText: Press 'E' to open
-  _interactWidth: .00499999989
-  _interactTextColor: {r: .501960814, g: 1, b: 0, a: 1}
-  _highlightColor: {r: .501960814, g: 1, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: .5
-  _highlightParts:
-  - {fileID: 20800498}
 --- !u!114 &20800495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,10 +557,6 @@ MonoBehaviour:
   m_Script: {fileID: 729531869, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 20800492}
-  _openAnimation: DoorOpen-180
-  _audioSource: {fileID: 0}
-  _openSound: {fileID: 0}
 --- !u!65 &20800496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -585,11 +569,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .179614782, y: 2.39999986, z: 1.19999993}
   m_Center: {x: -.0198451579, y: 1.19999993, z: -.599999964}
---- !u!23 &20800498 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: a549e305e90ac4598ab695c8084789d1,
-    type: 3}
-  m_PrefabInternal: {fileID: 835080113}
 --- !u!4 &25208331 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: d01c7060e2761422f922532e10c133e8, type: 3}
@@ -663,18 +642,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 0
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: This door is Locked
-  _interactWidth: .00499999989
-  _interactTextColor: {r: 1, g: 0, b: 0, a: 1}
-  _highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: 5
-  _highlightParts:
-  - {fileID: 34086202}
 --- !u!65 &34086200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -687,11 +654,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .216722175, y: 2.41999984, z: 1.19999993}
   m_Center: {x: -.0216389075, y: 1.20999992, z: .599999964}
---- !u!23 &34086202 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: c230680630b234e7b91feef70f30ab93,
-    type: 3}
-  m_PrefabInternal: {fileID: 1946988456}
 --- !u!1001 &36201207
 Prefab:
   m_ObjectHideFlags: 0
@@ -2754,8 +2716,6 @@ MonoBehaviour:
   m_Script: {fileID: -508521030, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enterMusicName: Tension
-  _exitMusicName: Ambient
 --- !u!65 &127055278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2815,18 +2775,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 1
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: This door is Locked
-  _interactWidth: .00499999989
-  _interactTextColor: {r: 1, g: 0, b: 0, a: 1}
-  _highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: 5
-  _highlightParts:
-  - {fileID: 133482182}
 --- !u!65 &133482180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2839,11 +2787,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .216722175, y: 2.41999984, z: 1.19999993}
   m_Center: {x: -.0216389075, y: 1.20999992, z: .599999964}
---- !u!23 &133482182 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: c230680630b234e7b91feef70f30ab93,
-    type: 3}
-  m_PrefabInternal: {fileID: 1658046354}
 --- !u!4 &134205024 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 592044f43cc764a22a6ee911fb3a559f, type: 3}
@@ -8895,10 +8838,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5acc2c16c88c4c88b1ac0a306093bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerMax: 1
-  timerMin: .200000003
-  onColor: {r: .552941203, g: 1, b: .505882382, a: .5}
-  offColor: {r: .179104507, g: .179104507, b: .179104507, a: .501960814}
 --- !u!108 &448095787
 Light:
   m_ObjectHideFlags: 0
@@ -14485,18 +14424,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 1
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: Shoot lock to open door
-  _interactWidth: .00499999989
-  _interactTextColor: {r: .501960814, g: 1, b: 0, a: 1}
-  _highlightColor: {r: .501960814, g: 1, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: .5
-  _highlightParts:
-  - {fileID: 737913110}
 --- !u!65 &737913108
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14523,11 +14450,6 @@ MonoBehaviour:
   SelectedEditorTags:
   - Id: 7
     Tag: Passable
---- !u!23 &737913110 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: 99329a1076b1443eab366641665f0c78,
-    type: 3}
-  m_PrefabInternal: {fileID: 863261204}
 --- !u!1001 &742390880
 Prefab:
   m_ObjectHideFlags: 0
@@ -15797,10 +15719,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5acc2c16c88c4c88b1ac0a306093bb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerMax: 1
-  timerMin: .200000003
-  onColor: {r: .552941203, g: 1, b: .505882382, a: .5}
-  offColor: {r: .179104507, g: .179104507, b: .179104507, a: .501960814}
 --- !u!108 &807403205
 Light:
   m_ObjectHideFlags: 0
@@ -19111,18 +19029,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 0
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: This door is Locked
-  _interactWidth: .00499999989
-  _interactTextColor: {r: 1, g: 0, b: 0, a: 1}
-  _highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: .5
-  _highlightParts:
-  - {fileID: 962467965}
 --- !u!65 &962467963
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19135,11 +19041,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .179614782, y: 2.39999986, z: 1.19999993}
   m_Center: {x: -.0198451579, y: 1.19999993, z: -.599999964}
---- !u!23 &962467965 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: a549e305e90ac4598ab695c8084789d1,
-    type: 3}
-  m_PrefabInternal: {fileID: 1923153278}
 --- !u!4 &964682240 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 32578e1dc084b437aa20811cf8deeca0, type: 3}
@@ -23857,18 +23758,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 0
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: This door is Locked
-  _interactWidth: .00499999989
-  _interactTextColor: {r: 1, g: 0, b: 0, a: 1}
-  _highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: .5
-  _highlightParts:
-  - {fileID: 1264937723}
 --- !u!65 &1264937721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23881,11 +23770,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .216722175, y: 2.41999984, z: 1.19999993}
   m_Center: {x: -.0216389075, y: 1.20999992, z: .599999964}
---- !u!23 &1264937723 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: c230680630b234e7b91feef70f30ab93,
-    type: 3}
-  m_PrefabInternal: {fileID: 1658529558}
 --- !u!1001 &1265125473
 Prefab:
   m_ObjectHideFlags: 0
@@ -25868,18 +25752,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 0
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: This door is Locked
-  _interactWidth: .00499999989
-  _interactTextColor: {r: 1, g: 0, b: 0, a: 1}
-  _highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: 5
-  _highlightParts:
-  - {fileID: 1343784990}
 --- !u!65 &1343784988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25892,11 +25764,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 21.1629333, y: 233.250473, z: 117.180054}
   m_Center: {x: -2.11302185, y: 116.625237, z: -58.5900269}
---- !u!23 &1343784990 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: 99329a1076b1443eab366641665f0c78,
-    type: 3}
-  m_PrefabInternal: {fileID: 1365643696}
 --- !u!1 &1345967914
 GameObject:
   m_ObjectHideFlags: 0
@@ -25942,18 +25809,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 1
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: Shoot lock to open door
-  _interactWidth: .00999999978
-  _interactTextColor: {r: .501960814, g: 1, b: 0, a: 1}
-  _highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: .5
-  _highlightParts:
-  - {fileID: 1372505063}
 --- !u!23 &1345967917
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25989,13 +25844,6 @@ MonoBehaviour:
   m_Script: {fileID: 1071069753, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 5
-  _hideThisOnDeath: {fileID: 1345967914}
-  _animator: {fileID: 737913104}
-  _deathAnimation: DoorOpen
-  _audioSource: {fileID: 0}
-  _deathSound: {fileID: 8300000, guid: 27e9ef35a22084e9d8241bb27677dc38, type: 3}
-  _deathAction: OnOpen
 --- !u!54 &1345967919
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -26608,11 +26456,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 01f7677a035d44fb492540206b458ca3, type: 3}
   m_PrefabInternal: {fileID: 458805208}
---- !u!23 &1372505063 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: 01f7677a035d44fb492540206b458ca3,
-    type: 3}
-  m_PrefabInternal: {fileID: 458805208}
 --- !u!1001 &1374205577
 Prefab:
   m_ObjectHideFlags: 0
@@ -26651,10 +26494,6 @@ Prefab:
     - target: {fileID: 468310, guid: 265c96bd2ab927f42aa1bbf17153b30d, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19808152, guid: 265c96bd2ab927f42aa1bbf17153b30d, type: 2}
-      propertyPath: ShapeModule.type
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 265c96bd2ab927f42aa1bbf17153b30d, type: 2}
@@ -30338,18 +30177,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 0
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: This door is Locked
-  _interactWidth: .00499999989
-  _interactTextColor: {r: 1, g: 0, b: 0, a: 1}
-  _highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: .5
-  _highlightParts:
-  - {fileID: 1574834541}
 --- !u!65 &1574834539
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30362,11 +30189,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .179614782, y: 2.39999986, z: 1.19999993}
   m_Center: {x: -.0198451579, y: 1.19999993, z: -.599999964}
---- !u!23 &1574834541 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: a549e305e90ac4598ab695c8084789d1,
-    type: 3}
-  m_PrefabInternal: {fileID: 71542167}
 --- !u!1001 &1576480818
 Prefab:
   m_ObjectHideFlags: 0
@@ -32254,7 +32076,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1673759033}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0900001526, y: -.46999985, z: -.229999542}
+  m_LocalPosition: {x: .0900001526, y: -.46999985, z: -.670000017}
   m_LocalScale: {x: 3.05175781, y: 3.05175781, z: 3.05175781}
   m_Children:
   - {fileID: 1146591126}
@@ -38238,18 +38060,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 0
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: This door is Locked
-  _interactWidth: .00499999989
-  _interactTextColor: {r: 1, g: 0, b: 0, a: 1}
-  _highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: .5
-  _highlightParts:
-  - {fileID: 1988882873}
 --- !u!65 &1988882871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38262,11 +38072,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .179614782, y: 2.39999986, z: 1.19999993}
   m_Center: {x: -.0198451579, y: 1.19999993, z: -.599999964}
---- !u!23 &1988882873 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: a549e305e90ac4598ab695c8084789d1,
-    type: 3}
-  m_PrefabInternal: {fileID: 1540154248}
 --- !u!1001 &1989130373
 Prefab:
   m_ObjectHideFlags: 0
@@ -39347,6 +39152,14 @@ Prefab:
       propertyPath: m_BackGroundColor.b
       value: .136786312
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_FovKick.Camera
+      value: 
+      objectReference: {fileID: 2053750935}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_DodgeSpeed
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
@@ -40263,18 +40076,6 @@ MonoBehaviour:
   m_Script: {fileID: 2050669299, guid: bc76cc0c25d9143f9a3f919db1a9dd44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _oneTime: 0
-  _canInteractWith: 1
-  _normalInteraction: 
-  _interactGUIText: {fileID: 0}
-  _interactText: This door is Locked
-  _interactWidth: .00499999989
-  _interactTextColor: {r: 1, g: 0, b: 0, a: 1}
-  _highlightColor: {r: 1, g: 0, b: 0, a: 1}
-  _nonhighlightColor: {r: 0, g: 0, b: 0, a: 0}
-  _fadeTime: .5
-  _highlightParts:
-  - {fileID: 2129437804}
 --- !u!65 &2129437802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40287,11 +40088,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .179614782, y: 2.39999986, z: 1.19999993}
   m_Center: {x: -.0198451579, y: 1.19999993, z: -.599999964}
---- !u!23 &2129437804 stripped
-MeshRenderer:
-  m_PrefabParentObject: {fileID: 2300000, guid: a549e305e90ac4598ab695c8084789d1,
-    type: 3}
-  m_PrefabInternal: {fileID: 683287294}
 --- !u!1001 &2130753439
 Prefab:
   m_ObjectHideFlags: 0

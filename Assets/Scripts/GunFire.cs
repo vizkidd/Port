@@ -50,7 +50,7 @@ public class GunFire : MonoBehaviour {
 		gun=(Gun)pistol;
 		previousState=currentState;
 		currentState=Input.GetButtonDown("Fire1");
-		if(currentState!=previousState && previousState!=true && !Input.GetKey(KeyCode.LeftShift))
+		if(currentState!=previousState && !shooting && !Input.GetKey(KeyCode.LeftShift))
 		{
 			anim.SetTrigger("Fire");
 			shooting=true;
