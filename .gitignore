@@ -3,7 +3,9 @@
 [Oo]bj/
 [Bb]uild/
 Assets/FPSControlAssets/
-Assets/Standard Assets/
+Assets/Standard Assets/2D
+Assets/Standard Assets/Environment
+Assets/Standard Assets/Vehicles
 Assets/TGB/
 Assets/TagFrenzy/
 
