@@ -53,6 +53,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		float tempwalkspeed;
 		Animator anim;
 
+		int jumpCount;
 		public bool aim;
 		public bool toggle;
 		public Camera cam;
@@ -169,9 +170,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 				{
 				m_WalkSpeed=tempwalkspeed;
 				}
-                if (m_Jump)
+				if (m_Jump)
                 {
 					//new code::::DODGE
+					jumpCount++;
 					switch (jDir) {
 					case JumpDirection.Forward:
 						m_MoveDir.y = m_JumpSpeed;
@@ -204,11 +206,23 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     m_Jumping = true;
 
                 }
+				else
+					jumpCount=0;
 
             }
             else
             {
                 m_MoveDir += Physics.gravity*m_GravityMultiplier*Time.fixedDeltaTime;
+				if(m_Jump && Input.GetAxis("Vertical")>0)
+				{
+					//jetpack
+					jumpCount++;
+					m_MoveDir.y=m_JumpSpeed;
+					m_MoveDir.z++;
+				}
+				else
+					jumpCount=0;
+				m_Jump=false;
             }
 
 			m_MoveDir.x = desiredMove.x*speed;
