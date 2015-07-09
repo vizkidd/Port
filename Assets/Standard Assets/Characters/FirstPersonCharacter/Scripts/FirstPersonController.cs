@@ -56,6 +56,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		int jumpCount;
 		public bool aim;
 		public bool toggle;
+
+		//temp reload code
+		public bool reload;
+		//temp reload end
+
 		public Camera cam;
 		public float zoomSpeed = 30f;
 		public float minZoomFOV = 45f;
@@ -166,6 +171,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (m_CharacterController.isGrounded)
             {
                 m_MoveDir.y = -m_StickToGroundForce;
+				jumpCount=0;
 				if(!dodging)
 				{
 				m_WalkSpeed=tempwalkspeed;
@@ -206,22 +212,20 @@ namespace UnityStandardAssets.Characters.FirstPerson
                     m_Jumping = true;
 
                 }
-				else
-					jumpCount=0;
+
 
             }
             else
             {
                 m_MoveDir += Physics.gravity*m_GravityMultiplier*Time.fixedDeltaTime;
-				if(m_Jump && Input.GetAxis("Vertical")>0)
+				if(m_Jump && Input.GetAxis("Vertical")>0 && jumpCount <2)
 				{
 					//jetpack
+
 					jumpCount++;
-					m_MoveDir.y=m_JumpSpeed;
+					m_MoveDir.y=15f;
 					m_MoveDir.z++;
 				}
-				else
-					jumpCount=0;
 				m_Jump=false;
             }
 
@@ -319,7 +323,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             //player code
 			aim=Input.GetButton("Fire2");
-			
+
+			//temp reload code
+			reload=Input.GetButtonDown("Reload");
+			//temp reload end
+
 			if(aim)
 			{
 				m_IsWalking=true;
@@ -351,7 +359,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
 				}
 			}
 
-
+			//temp reload code
+			if(reload)
+			{
+				anim.SetBool("Reload",reload);
+				anim.SetBool("Aim",false);
+				reload=false;
+			}
+			//temp reload end
 			speed = m_IsWalking ? m_WalkSpeed : m_RunSpeed;
 			if(dodging)
 			{
