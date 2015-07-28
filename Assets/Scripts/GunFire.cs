@@ -23,7 +23,7 @@ public class GunFire : MonoBehaviour {
 	Animator anim;
 	bool fire;
 	RaycastHit[] rays;
-	bool previousState,currentState,shooting;
+	bool previousFireState,currentFireState,previousPortState,currentPortState,shooting,porting;
 	Gun gun,pistol;
 	// Use this for initialization
 	void Start () {
@@ -48,24 +48,36 @@ public class GunFire : MonoBehaviour {
 	void Update () {
 	
 		gun=(Gun)pistol;
-		previousState=currentState;
-		currentState=Input.GetButtonDown("Fire1");
-		if(currentState!=previousState && !shooting && !Input.GetKey(KeyCode.LeftShift))
+		previousFireState=currentFireState;
+		previousPortState=currentPortState;
+		currentFireState=Input.GetButtonDown("Fire1");
+		currentPortState=Input.GetButtonDown("Port");
+		if(currentFireState!=previousFireState && !shooting && !Input.GetKey(KeyCode.LeftShift))
 		{
 			anim.SetTrigger("Fire");
 			shooting=true;
 			muzzle_flash.Play();
 		}
-        
+		if(currentPortState==true && !porting)
+		{
+
+			anim.SetTrigger("Port");
+			shooting=true;
+			porting=true;
+		}
+	
 	}
 
 	void FixedUpdate(){
-		if(shooting)
+		if(shooting && !porting)
 		{
 			Bullets(rays,barrel.transform,gun.piercing,gun.range,gun.bullets);
 			shooting=false;
 		}
-
+		if(porting && shooting)
+		{
+			Debug.Log (gameObject.GetComponentInParent<MeshRenderer>().ToString());
+		}
 	}
 	void Bullets(RaycastHit[] rays,Transform origin,float piercingFactor,float range,float bullets)
 	{
