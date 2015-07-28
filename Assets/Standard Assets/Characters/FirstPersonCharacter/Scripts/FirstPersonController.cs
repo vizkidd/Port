@@ -325,7 +325,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			aim=Input.GetButton("Fire2");
 
 			//temp reload code
-			reload=Input.GetButtonDown("Reload");
+			//reload=Input.GetButtonDown("Reload");
 			//temp reload end
 
 			if(aim)
